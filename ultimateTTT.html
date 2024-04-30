@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neupe</title>
+    <link rel="stylesheet" href="styles/ultimateTTT.css">
+    <link rel="icon" type="image/png" href="images/treepicEdit.png"/>
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        
+        <h1 class="KHMenu">
+            The <a id="stars">Stars</a> Have Never Shown as
+            <!-- onclick="audio.play()" to play audio on click-->
+          <a href="blog.html">  <button class="topBTN">blog</button></a>
+          <a href="pictures.html"><button class="topBTN">pictures</button></a>
+           <a href="game.html"> <button class="topBTN">play game</button></a>
+          <a href="portfolio.html">  <button class="topBTN">portfolio</button></a>
+           <a href="indStudy.html"> <button class="topBTN">ind. study (serious blog)</button></a>
+
+           <a href="main.html"> <button class="topBTN" id="homeBTN">home</button></a>
+            <p id="welovedopeshit">Bright as They Have This Year </p>
+            
+        
+           <hr id="line1">
+
+        </h1>
+       
+    </header>
+    <br>
+    <h1 style="font-size: 4.2em; margin-left: 2.5%;"  >Ultimate Tic Tac Toe</h1>
+    <h1 style="font-size: 4.2em; " ></h1>
+
+    <div id="board">
+        <div class="bigCell" id="0" bigCellIndex = 0 style="border-right: 5px solid black; border-bottom: 5px solid black;" >
+            <div class="cells" cellIndex = 0 ></div>
+            <div class="cells" cellIndex = 1  ></div>
+            <div class="cells" cellIndex = 2></div>
+            <div class="cells"  cellIndex = 3></div>
+            <div class="cells" cellIndex = 4></div>
+            <div class="cells" cellIndex =  5></div>
+            <div class="cells" cellIndex = 6> </div>
+            <div class="cells" cellIndex = 7></div>
+            <div class="cells" cellIndex = 8></div>
+        </div>
+        <div class="bigCell" id="1" bigCellIndex = 1 style="border-right: 5px solid black; border-bottom: 5px solid black;" >
+            <div class="cells" cellIndex = 0 ></div>
+            <div class="cells" cellIndex = 1  ></div>
+            <div class="cells" cellIndex = 2></div>
+            <div class="cells"  cellIndex = 3></div>
+            <div class="cells" cellIndex = 4></div>
+            <div class="cells" cellIndex =  5></div>
+            <div class="cells" cellIndex = 6> </div>
+            <div class="cells" cellIndex = 7></div>
+            <div class="cells" cellIndex = 8></div>
+        </div>
+        <div class="bigCell" id="2" bigCellIndex = 2 style="border-bottom: 5px solid black;">
+            <div class="cells" cellIndex = 0 ></div>
+            <div class="cells" cellIndex = 1  ></div>
+            <div class="cells" cellIndex = 2></div>
+            <div class="cells"  cellIndex = 3></div>
+            <div class="cells" cellIndex = 4></div>
+            <div class="cells" cellIndex =  5></div>
+            <div class="cells" cellIndex = 6> </div>
+            <div class="cells" cellIndex = 7></div>
+            <div class="cells" cellIndex = 8></div>
+        </div>
+        <div class="bigCell" id="3" bigCellIndex = 3 style="border-right: 5px solid black; border-bottom: 5px solid black;" >
+            <div class="cells" cellIndex = 0 ></div>
+            <div class="cells" cellIndex = 1  ></div>
+            <div class="cells" cellIndex = 2></div>
+            <div class="cells"  cellIndex = 3></div>
+            <div class="cells" cellIndex = 4></div>
+            <div class="cells" cellIndex =  5></div>
+            <div class="cells" cellIndex = 6> </div>
+            <div class="cells" cellIndex = 7></div>
+            <div class="cells" cellIndex = 8></div>
+        </div>
+        <div class="bigCell" id="4" bigCellIndex = 4 style="border-right: 5px solid black; border-bottom: 5px solid black;">
+            <div class="cells" cellIndex = 0 ></div>
+            <div class="cells" cellIndex = 1  ></div>
+            <div class="cells" cellIndex = 2></div>
+            <div class="cells"  cellIndex = 3></div>
+            <div class="cells" cellIndex = 4></div>
+            <div class="cells" cellIndex =  5></div>
+            <div class="cells" cellIndex = 6> </div>
+            <div class="cells" cellIndex = 7></div>
+            <div class="cells" cellIndex = 8></div>
+        </div>
+        <div class="bigCell" id="5" bigCellIndex = 5 style="border-bottom: 5px solid black;">
+            <div class="cells" cellIndex = 0 ></div>
+            <div class="cells" cellIndex = 1  ></div>
+            <div class="cells" cellIndex = 2></div>
+            <div class="cells"  cellIndex = 3></div>
+            <div class="cells" cellIndex = 4></div>
+            <div class="cells" cellIndex =  5></div>
+            <div class="cells" cellIndex = 6> </div>
+            <div class="cells" cellIndex = 7></div>
+            <div class="cells" cellIndex = 8></div>
+        </div>
+        <div class="bigCell" id="6" bigCellIndex = 6 style="border-right: 5px solid black;">
+            <div class="cells" cellIndex = 0 ></div>
+            <div class="cells" cellIndex = 1  ></div>
+            <div class="cells" cellIndex = 2></div>
+            <div class="cells"  cellIndex = 3></div>
+            <div class="cells" cellIndex = 4></div>
+            <div class="cells" cellIndex =  5></div>
+            <div class="cells" cellIndex = 6> </div>
+            <div class="cells" cellIndex = 7></div>
+            <div class="cells" cellIndex = 8></div>
+        </div>
+        <div class="bigCell" id="7" bigCellIndex = 7 style="border-right: 5px solid black;">
+            <div class="cells" cellIndex = 0 ></div>
+            <div class="cells" cellIndex = 1  ></div>
+            <div class="cells" cellIndex = 2></div>
+            <div class="cells"  cellIndex = 3></div>
+            <div class="cells" cellIndex = 4></div>
+            <div class="cells" cellIndex =  5></div>
+            <div class="cells" cellIndex = 6> </div>
+            <div class="cells" cellIndex = 7></div>
+            <div class="cells" cellIndex = 8></div>
+        </div>
+        <div class="bigCell" id="8" bigCellIndex = 8>
+            <div class="cells" cellIndex = 0 ></div>
+            <div class="cells" cellIndex = 1  ></div>
+            <div class="cells" cellIndex = 2></div>
+            <div class="cells"  cellIndex = 3></div>
+            <div class="cells" cellIndex = 4></div>
+            <div class="cells" cellIndex =  5></div>
+            <div class="cells" cellIndex = 6> </div>
+            <div class="cells" cellIndex = 7></div>
+            <div class="cells" cellIndex = 8></div>
+        </div>
+    </div>
+
+
+
+        <br>
+        <h2 id="turnText" style="font-size: xx-large; margin-top: 2%;">
+            
+        </h2>
+        <button id="newGame" class="topBTN" onclick="location.reload();">New Game</button>
+
+
+    </div>
+
+    
+</body> 
+
+<script src="scripts/ultimateTTT.js"></script>
+
+</html> 

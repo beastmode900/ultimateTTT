@@ -1,0 +1,110 @@
+
+* {margin: 0; padding: 0}
+
+
+@font-face {
+    font-family: KHMenu;
+    src: url('../fonts/KHMenu.otf');
+}
+@font-face {
+    font-family: KHTitle;
+    src: url('../fonts/KHTitle.otf');
+}
+.KHmenu{
+    font-family: KHMenu; font-size: 4.2em;
+}
+
+.KHTitle{
+    font-family: KHTitle; font-size: 4.2em;
+
+}
+
+
+
+body{
+    background-color: floralwhite;
+    font-family: KHMenu;
+    font-size: 80%;
+    text-align: center;
+ /*   background-repeat: no-repeat;
+    background-image:url(images/me_couchPleasant.JPG);
+    background-attachment: fixed;
+    background-size: 100% 100%; 
+    this is awesome lol def use this for a diff page*/
+    
+    
+    
+}
+
+.header{
+    text-align: left;
+    margin-left: 1%;
+    color: black;
+    font-size: 100%;
+    border-bottom: 10% black;
+    flex-wrap: wrap;
+    top: 0;
+    margin-top: .5%;  
+}
+
+
+.topBTN{
+    margin-left: 2%;
+    font-family: KHMenu;
+    font-size: large;
+    padding: .2%;
+    position: relative;
+    top: 10px; 
+    cursor: pointer;
+}
+
+#homeBTN{
+    float: right;
+    margin-right: 1%;
+}
+
+
+.cells{
+    height: 65px;
+    width: 65px;
+    font-size: 2.2em;
+    cursor: pointer;
+    border: 2px solid black;
+    position: relative;
+    align-content: center;
+    
+    
+ 
+}
+
+#board{
+    margin-left: auto;
+    margin-right: auto;
+    width: 585px;
+    height: 585px;
+ /*   background-color: bisque;  rgb(161, 145, 125);  for the darkened color*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   /* padding: 10px; */
+   
+    
+    
+    
+}
+
+.bigCell{
+    height: auto;
+    width: auto;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*background-color: rgb(161, 145, 125); */
+    
+    
+    
+
+}
+
+
+
+
