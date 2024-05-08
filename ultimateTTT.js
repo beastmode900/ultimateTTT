@@ -1,4 +1,4 @@
-const winAudio = new Audio("../sounds/kh1fanfare.wav");
+const winAudio = new Audio("sounds/kh1fanfare.wav");
 
 const cells = document.querySelectorAll(".cells");
 const bigCells = document.querySelectorAll(".bigCell");
@@ -61,20 +61,18 @@ function checkSmallWin(bigCellIndex){
 
     if(smallWin){
         setTimeout(() => {fillTile(bigCellIndex);}, 400);
+        //fillTile(bigCellIndex);
         bigCellOptions[bigCellIndex] = winnerChar;
-        currentBigCell = 10;
-        for(let i = 0; i < 9; i++){
-            setTimeout(() => {document.getElementById(i).style.backgroundColor = "bisque";}, 400); 
+        if(bigCellOptions[bigCellIndex] != ""){
+            currentBigCell = 10;
         }
+        //currentBigCell = 10;
+      //  for(let i = 0; i < 9; i++){
+      //      setTimeout(() => {document.getElementById(i).style.backgroundColor = "bisque";}, 400); 
+      //  }
         //setTimeout(() => {document.getElementById("board").style.backgroundColor = "bisque";}, 400);
         checkBigWin();
-        //turnText.textContent = `${player} dubbed out`;
-        //running = false;
     }
-   /* else if(!options.includes("")){
-        turnText.textContent = 'draw...';
-        //running = false;
-    } */
     else{
         changePlayer();
     }
@@ -125,7 +123,7 @@ function clicked(){
     const parentCell = this.parentNode;
    // console.log(parentCell);
     const bigCellIndex = parentCell.getAttribute("bigCellIndex")
-    console.log(bigCellIndex);
+   
     if(bigCellIndex != currentBigCell && currentBigCell < 10){
         return;
     }
@@ -134,7 +132,7 @@ function clicked(){
         return;
     }
     updateCell(this, cellIndex, bigCellIndex);
-    
+    checkSmallWin(bigCellIndex);
     if(bigCellOptions[cellIndex] != ""){
         currentBigCell = 10;
         for(let i = 0; i < 9; i++){
@@ -152,7 +150,7 @@ function clicked(){
         }
         
     }
-    checkSmallWin(bigCellIndex);
+    
    
 }
 
